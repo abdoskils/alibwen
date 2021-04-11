@@ -2,9 +2,9 @@ import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
 import Order from '../models/orderModel.js';
 import {
-  isAdmin,
-  isAuth,
-  isSellerOrAdmin,
+  // isAdmin,
+  // isAuth,
+  // isSellerOrAdmin,
   mailgun,
   payOrderEmailTemplate,
 } from '../utils.js';
@@ -50,7 +50,7 @@ orderRouter.post(
         shippingPrice: req.body.shippingPrice,
         taxPrice: req.body.taxPrice,
         totalPrice: req.body.totalPrice,
-        user: req.user._id,
+      //  user: req.user._id,
       });
       const createdOrder = await order.save();
       res

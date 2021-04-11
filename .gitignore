@@ -22,4 +22,4 @@ yarn-error.log*
 package-lock.json
 
 .env
-/uploads/*.jpg
+/uploads/*.jpg"node_modules" 
